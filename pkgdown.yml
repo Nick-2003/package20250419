@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   my-vignette: my-vignette.html
-last_built: 2025-04-23T01:45Z
+last_built: 2025-04-23T16:37Z
 urls:
   reference: https://nick-2003.github.io/package20250419/reference
   article: https://nick-2003.github.io/package20250419/articles
