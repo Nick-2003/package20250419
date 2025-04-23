@@ -25,6 +25,10 @@ temp_conv <- function(temp, start_scale, end_scale) {
   } else if ((temp < 0 && start_scale == "K") || (temp < -273.15 && start_scale == "C") || (temp < -459.67 && start_scale == "F")) {
     stop("Invalid temperature.")
   }
+  # stopifnot((start_scale %in% c("F", "C", "K")), !(end_scale %in% c("F", "C", "K")), 
+  #           is.numeric(temp),
+  #           (temp >= 0 && start_scale == "K") || (temp >= -273.15 && start_scale == "C") || (temp >= -459.67 && start_scale == "F"))
+
 
   if (start_scale == end_scale) {
     return(temp)
